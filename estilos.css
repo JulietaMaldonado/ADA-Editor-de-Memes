@@ -41,3 +41,33 @@ nav {
 .botonNav:hover {
   background-color: #4e5565;
 }
+
+/*MEME*/
+main {
+  display: flex;
+  justify-content: center;
+}
+.meme {
+  margin: 20px;
+  height: 700px;
+  width: 610px;
+  background-color: black;
+}
+.textT {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 85px;
+}
+.textB {
+  display: flex;
+  justify-content: center;
+  margin-top: 527px;
+  background-color: white;
+  height: 85px;
+}
+h2 {
+  color: black;
+  font-size: 36px;
+  padding: 18px;
+}
