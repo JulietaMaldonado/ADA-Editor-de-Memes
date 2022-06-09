@@ -1,1 +1,43 @@
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #30343f;
+}
+/*ENCABEZADO*/
+.encabezado {
+  background-color: #191e2b;
+  height: 125px;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.botonNav {
+  background-color: transparent;
+  height: 36px;
+  width: fit-content;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
 
+/*hover*/
+.botonNav:hover {
+  background-color: #4e5565;
+}
