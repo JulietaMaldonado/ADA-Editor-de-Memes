@@ -6,6 +6,16 @@
 body {
   background-color: #30343f;
 }
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+.izquierda {
+  width: 83%;
+}
+.derecha {
+  width: 10%;
+}
 /*ENCABEZADO*/
 .encabezado {
   background-color: #191e2b;
@@ -46,11 +56,12 @@ nav {
 main {
   display: flex;
   justify-content: center;
+  margin: none;
+  padding: none;
 }
 .meme {
-  margin: 20px;
-  height: 700px;
-  width: 610px;
+  height: 596px;
+  width: 540px;
   background-color: black;
 }
 .textT {
@@ -62,7 +73,7 @@ main {
 .textB {
   display: flex;
   justify-content: center;
-  margin-top: 527px;
+  margin-top: 426px;
   background-color: white;
   height: 85px;
 }
@@ -70,4 +81,19 @@ h2 {
   color: black;
   font-size: 36px;
   padding: 18px;
+}
+
+/*ASIDE Y ARREGLOS DE MEME*/
+aside {
+  width: 260px;
+  height: 100vh;
+  background-color: #252935;
+}
+h3 {
+  font-size: 24px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
 }

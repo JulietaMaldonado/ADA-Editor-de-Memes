@@ -21,29 +21,48 @@
   </head>
 
   <body>
-    <!--ENCABEZADO DE LA PAGINA-->
-    <div class="encabezado">
-      <header>
-        <h1>Generador de Memes</h1>
-      </header>
-      <nav>
-        <button class="botonNav">
-          <i class="fa-solid fa-file-image"></i> Imagen
-        </button>
-        <button class="botonNav"><i class="fa-solid fa-a"></i> Texto</button>
-        <button class="botonNav">
-          <i class="fa-solid fa-lightbulb"></i> Modo oscuro
-        </button>
-      </nav>
-    </div>
+    <!--CONTENEDOR DE LA PAGINA-->
+    <div class="contenedor">
+      <!--CONTENEDOR DEL CONTENIDO DE LA IZQUIERDA-->
+      <div class="izquierda">
+        <!--ENCABEZADO DE LA PAGINA-->
+        <div class="encabezado">
+          <header>
+            <h1>Generador de Memes</h1>
+          </header>
+          <nav>
+            <button class="botonNav">
+              <i class="fa-solid fa-file-image"></i> Imagen
+            </button>
+            <button class="botonNav">
+              <i class="fa-solid fa-a"></i> Texto
+            </button>
+            <button class="botonNav">
+              <i class="fa-solid fa-lightbulb"></i> Modo oscuro
+            </button>
+          </nav>
+        </div>
 
-    <!--MEME-->
-    <main>
-      <div class="meme">
-        <div class="textT"><h2>Top Text</h2></div>
-        <div class="textB"><h2>Bottom Text</h2></div>
+        <!--MEME-->
+        <main>
+          <div class="meme">
+            <div class="textT"><h2>Top Text</h2></div>
+            <div class="textB"><h2>Bottom Text</h2></div>
+          </div>
+        </main>
       </div>
-    </main>
+      <!--CONTENEDOR DEL CONTENIDO DE LA DERECHA-->
+      <div class="derecha">
+        <aside>
+          <div class="imagen">
+            <h3>IMAGEN</h3>
+          </div>
+          <div class="texto" style="display: none">
+            <h3>TEXTO</h3>
+          </div>
+        </aside>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
