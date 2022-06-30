@@ -63,37 +63,322 @@ main {
   height: 596px;
   width: 540px;
   background-color: black;
+  margin: 15px;
 }
-.textT {
+/*TEXTO DEL MEME*/
+h2 {
+  color: black;
+  font-size: 36px;
+  padding: 18px;
+}
+.textoTM {
   display: flex;
   justify-content: center;
   background-color: white;
   height: 85px;
 }
-.textB {
+.textoBM {
   display: flex;
   justify-content: center;
   margin-top: 426px;
   background-color: white;
   height: 85px;
 }
-h2 {
-  color: black;
-  font-size: 36px;
-  padding: 18px;
-}
 
 /*ASIDE Y ARREGLOS DE MEME*/
+
+/*ELEMENTOS GENERALES DEL ASIDE*/
 aside {
-  width: 260px;
-  height: 100vh;
+  width: 250px;
+  height: 100%;
   background-color: #252935;
 }
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+label {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+/*ELEMENTOS DE ASIDE IMAGEN*/
+.asideImagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ajustes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+/*URL*/
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.urlImagen {
+  height: 35px;
+  width: 100%;
+  background-color: #30343f;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+/*FONDO*/
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.contColorFondo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.colorFondo {
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #30343f;
+  border: none;
+}
+.modosFusion {
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #30343f;
+  border: none;
+  color: white;
+}
+/*FILTROS*/
+.cont3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.labelFiltro {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.restablecerBoton {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #30343f;
+  border: none;
+  color: white;
+  height: 30px;
+  margin-left: 25px;
+}
+/*ELEMENTOS DEL ASIDE TEXTO*/
+/*ELEMENTO GENERALES DEL ASIDE */
+.titulosInput {
+  width: 230px;
+  height: 40px;
+  background-color: #30343f;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+}
+.textoC {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-left: 3px;
+}
+/*ELEMENTOS DEL ASIDE*/
+.asideTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.textoTTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.textoBTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.fuentes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px;
+}
+.fuenteA {
+  width: 100%;
+}
+.tiposFuentes {
+  width: 230px;
+  height: 40px;
+  background-color: #30343f;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
+}
+.fuenteB {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tamanioFuente {
+  width: 60%;
+  height: 40px;
+  background-color: #30343f;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
+}
+.alinearTexto {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10px;
+}
+.alinear {
+  width: 80px;
+  height: 30px;
+  background-color: #30343f;
+  border: none;
+  border-radius: 3px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+}
+.colorTF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.colorT {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10px;
+}
+.colorF {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 10px;
+}
+.colorTextoInput {
+  background-color: #30343f;
+  width: 100px;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.colorFondoInput {
+  background-color: #30343f;
+  width: 100px;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.checkF {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.textoCheck {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.contorno {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contornoBoton {
+  width: fit-content;
+  height: 30px;
+  background-color: #30343f;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-family: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.espaciado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.espaciadoInput {
+  background-color: #30343f;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+.interlineado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.interlineadoSelect {
+  background-color: #30343f;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 8px;
 }
