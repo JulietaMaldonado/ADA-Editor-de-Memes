@@ -22,15 +22,15 @@
 
   <body>
     <!--CONTENEDOR DE LA PAGINA-->
-    <div class="contenedor">
+    <div class="contenedor" id="contenedor">
       <!--CONTENEDOR DEL CONTENIDO DE LA IZQUIERDA-->
       <div class="izquierda">
         <!--ENCABEZADO DE LA PAGINA-->
-        <div class="encabezado">
-          <header>
+        <div class="encabezado" id="encabezado">
+          <header id="header">
             <h1>Generador de Memes</h1>
           </header>
-          <nav>
+          <nav id="nav">
             <button class="botonNav" id="imagenBoton">
               <i class="fa-solid fa-file-image"></i> Imagen
             </button>
@@ -45,7 +45,7 @@
 
         <!--MEME-->
         <main>
-          <div class="meme">
+          <div class="meme" id="meme">
             <div class="textoTM" id="textoTM">
               <h2 id="textoTM">Top Text</h2>
             </div>
@@ -57,15 +57,16 @@
       </div>
       <!--CONTENEDOR DEL CONTENIDO DE LA DERECHA-->
       <div class="derecha">
-        <aside>
-          <div class="asideImagen" id="asideImagen" style="display: none">
+        <aside id="aside">
+
+          <!--ASIDE IMAGEN-->
+          <div class="asideImagen" id="asideImagen">
             <h3>IMAGEN</h3>
             <div class="ajustes">
               <div class="cont1">
                 <label for="">URL</label>
                 <input type="url" class="urlImagen" id="urlImagen" />
               </div>
-
               <div class="cont2">
                 <label for="">FONDO</label>
                 <div class="contColorFondo">
@@ -74,7 +75,7 @@
                     class="colorFondo"
                     id="colorFondoImagen"
                   />
-                  <select name="" id="" class="modosFusion">
+                  <select name="" id="modosFusion" class="modosFusion">
                     <option value="">Ninguno</option>
                     <option value="">Aclarar</option>
                     <option value="">Oscurecer</option>
@@ -84,7 +85,6 @@
                   </select>
                 </div>
               </div>
-
               <div class="cont3">
                 <label for="">FILTROS</label>
                 <label for="" class="labelFiltro">BRILLO</label>
@@ -111,7 +111,9 @@
               Restablecer filtros
             </button>
           </div>
-          <div class="asideTexto">
+
+          <!--ASIDE TEXTO-->
+          <div class="asideTexto" id="asideTexto" style="display: none">
             <h3>TEXTO</h3>
             <div class="textoTTitulo">
               <label for="">SUPERIOR</label>
@@ -162,8 +164,6 @@
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
           <div class="coloresTexto">
             <div class="colorTF">
               <div class="colorT">
@@ -217,10 +217,10 @@
               <option value="">2.5</option>
             </select>
           </div>
-        </aside>
       </div>
     </div>
-
+  </div>
+</aside>
     <script src="main.js"></script>
   </body>
 </html>

@@ -3,18 +3,20 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: #30343f;
-}
 .contenedor {
+  background-color: #30343f;
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 .izquierda {
-  width: 83%;
+  width: 95%;
+  overflow: hidden;
 }
 .derecha {
-  width: 10%;
+  width: 20%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 /*ENCABEZADO*/
 .encabezado {
@@ -381,4 +383,20 @@ label {
   border: none;
   border-radius: 3px;
   margin-top: 8px;
+}
+
+/*MODO LIGHT ESTILOS*/
+.lightMood1 {
+  background-color: #e0e0e0;
+  color: black;
+}
+.lightMood2 {
+  background-color: grey;
+}
+.lightMood3 {
+  background-color: white;
+  color: black;
+}
+.lightMood4:hover {
+  background-color: #e0e0e0;
 }
