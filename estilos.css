@@ -400,3 +400,11 @@ label {
 .lightMood4:hover {
   background-color: #e0e0e0;
 }
+
+/*ESTILOS PARA OCULTAR TEXTOS SUPERIOR E INFERIOR CHECK*/
+.ocultar {
+  display: none;
+}
+.fondoTrans {
+  background-color: transparent;
+}

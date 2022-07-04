@@ -117,9 +117,9 @@
             <h3>TEXTO</h3>
             <div class="textoTTitulo">
               <label for="">SUPERIOR</label>
-              <input type="text" placeholder="TOP TEXT" class="titulosInput" />
+              <input type="text" placeholder="TOP TEXT" class="titulosInput" id="textoTop"/>
               <div class="check">
-                <input type="checkbox" />
+                <input type="checkbox" id="displayTM" />
                 <p class="textoC">Sin texto superior</p>
               </div>
             </div>
@@ -129,10 +129,11 @@
                 type="text"
                 placeholder="BOTTOM TEXT"
                 class="titulosInput"
+                id="textoBotton"
               />
               <div class="check">
-                <input type="checkbox" />
-                <p class="textoC">Sin texto superior</p>
+                <input type="checkbox" id="displayBM"/>
+                <p class="textoC">Sin texto inferior</p>
               </div>
             </div>
             <div class="fuentes">
@@ -168,15 +169,15 @@
             <div class="colorTF">
               <div class="colorT">
                 <label for="">COLOR</label>
-                <input type="color" name="" id="" class="colorTextoInput" />
+                <input type="color" name="" id="colorTextoInput" class="colorTextoInput" />
               </div>
               <div class="colorF">
                 <label for="">FONDO</label>
-                <input type="color" name="" id="" class="colorFondoInput" />
+                <input type="color" name="" id="colorFondoInput" class="colorFondoInput" />
               </div>
             </div>
             <div class="checkF">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="fondoTransCheck" />
               <p class="textoCheck">Fondo transparente</p>
             </div>
           </div>
