@@ -10,7 +10,7 @@
   margin: 0;
 }
 .izquierda {
-  width: 95%;
+  width: 80%;
   overflow: hidden;
 }
 .derecha {
@@ -66,32 +66,40 @@ main {
   width: 540px;
   background-color: black;
   margin: 15px;
+  background-repeat: inherit;
 }
 /*TEXTO DEL MEME*/
 h2 {
   color: black;
-  font-size: 36px;
   padding: 18px;
 }
-.textoTM {
+.textoFondoTM {
   display: flex;
-  justify-content: center;
   background-color: white;
   height: 85px;
 }
-.textoBM {
+.textoFondoBM {
   display: flex;
-  justify-content: center;
   margin-top: 426px;
   background-color: white;
   height: 85px;
+}
+#textoTM {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+#textoBM {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
 }
 
 /*ASIDE Y ARREGLOS DE MEME*/
 
 /*ELEMENTOS GENERALES DEL ASIDE*/
 aside {
-  width: 250px;
+  width: 100%;
   height: 100%;
   background-color: #252935;
 }
@@ -385,6 +393,27 @@ label {
   margin-top: 8px;
 }
 
+/*BOTON DE DESCARGA*/
+.botonDesDiv {
+  display: flex;
+  justify-content: center;
+}
+.descarga {
+  background-color: #2e7d32;
+  height: 50px;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
 /*MODO LIGHT ESTILOS*/
 .lightMood1 {
   background-color: #e0e0e0;
@@ -406,5 +435,5 @@ label {
   display: none;
 }
 .fondoTrans {
-  background-color: transparent;
+  background-color: transparent !important;
 }

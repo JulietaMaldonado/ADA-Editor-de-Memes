@@ -1,4 +1,4 @@
-1<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Memes</title>
 
+    <!--Boton de descarga enlaces-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
     <!--Estilos, iconos y tipografias-->
     <link rel="stylesheet" href="estilos.css" />
     <link
@@ -46,14 +49,19 @@
         <!--MEME-->
         <main>
           <div class="meme" id="meme">
-            <div class="textoTM" id="textoTM">
+            <div class="textoFondoTM" id="textoFondoTM">
               <h2 id="textoTM">Top Text</h2>
             </div>
-            <div class="textoBM" id="textoBM">
+            <div class="textoFondoBM" id="textoFondoBM">
               <h2 id="textoBM">Bottom Text</h2>
             </div>
           </div>
         </main>
+
+        <div class="botonDesDiv">
+          <button class="descarga" id="descarga"><i class="fa-solid fa-download"></i> Descargar meme</button>
+        </div>
+
       </div>
       <!--CONTENEDOR DEL CONTENIDO DE LA DERECHA-->
       <div class="derecha">
@@ -88,23 +96,23 @@
               <div class="cont3">
                 <label for="">FILTROS</label>
                 <label for="" class="labelFiltro">BRILLO</label>
-                <input type="range" />
+                <input type="range" value="100" id="fbri"/>
                 <label for="" class="labelFiltro">OPACIDAD</label>
-                <input type="range" />
+                <input type="range" value="1" id="fopa"/>
                 <label for="" class="labelFiltro">CONTRASTE</label>
-                <input type="range" />
+                <input type="range" value="100" id="fcon"/>
                 <label for="" class="labelFiltro">DESENFOQUE</label>
-                <input type="range" />
+                <input type="range" value="0" id="fdes"/>
                 <label for="" class="labelFiltro">ESCALA DE GRISES</label>
-                <input type="range" />
+                <input type="range" value="0" id="fgri"/>
                 <label for="" class="labelFiltro">SEPIA</label>
-                <input type="range" />
+                <input type="range" value="0" id="fsep"/>
                 <label for="" class="labelFiltro">HUE</label>
-                <input type="range" />
+                <input type="range" value="0" id="fhue"/>
                 <label for="" class="labelFiltro">SATURADO</label>
-                <input type="range" />
+                <input type="range" value="100" id="fsat"/>
                 <label for="" class="labelFiltro">NEGATIVO</label>
-                <input type="range" />
+                <input type="range" value="0" id="fneg"/>
               </div>
             </div>
             <button class="restablecerBoton" id="restablecerBoton">
@@ -139,28 +147,28 @@
             <div class="fuentes">
               <label for="">FUENTE</label>
               <div class="fuenteA">
-                <select name="" id="" class="tiposFuentes">
-                  <option value="">Arial</option>
-                  <option value="">Arial Black</option>
-                  <option value="">America Typewriter</option>
-                  <option value="">Andale Mono</option>
-                  <option value="">Comic Sans MS</option>
-                  <option value="">Helvetica</option>
-                  <option value="">Impact</option>
-                  <option value="">Verdana</option>
-                  <option value="">Times New Roman</option>
+                <select name="" id="tiposFuentes" class="tiposFuentes">
+                  <option value="Arial" id="arialF">Arial</option>
+                  <option value="Arial Black" id="arialBF">Arial Black</option>
+                  <option value="American Typewriter" id="americaF">American Typewriter</option>
+                  <option value="Andale Mono" id="andaleF">Andale Mono</option>
+                  <option value="Comic Sans MS" id="comicF">Comic Sans MS</option>
+                  <option value="Helvetica" id="helveticaF">Helvetica</option>
+                  <option value="Impact" id="impactF">Impact</option>
+                  <option value="Verdana" id="verdanaF">Verdana</option>
+                  <option value="Times New Roman" id="timesF">Times New Roman</option> 
                 </select>
               </div>
               <div class="fuenteB">
-                <input type="number" value="40" class="tamanioFuente" />
+                <input type="number" value="40" class="tamanioFuente" id="fuenteTam"/>
                 <div class="alinearTexto">
-                  <button class="alinear">
+                  <button class="alinear" id="aliIzquierda">
                     <i class="fa-solid fa-align-left"></i>
                   </button>
-                  <button class="alinear">
+                  <button class="alinear" id="aliCentro">
                     <i class="fa-solid fa-align-center"></i>
                   </button>
-                  <button class="alinear">
+                  <button class="alinear" id="aliDerecha">
                     <i class="fa-solid fa-align-right"></i>
                   </button>
                 </div>
