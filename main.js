@@ -65,17 +65,16 @@ const filtros = () => {
   opacity(${fopa.value}) 
   contrast(${fcon.value}%) 
   blur(${fdes.value}px)
-  greyscale(${fgri.value}%)
+  grayscale(${fgri.value}%)
   sepia(${fsep.value}%)
-  hue-rotation(${fhue.value}deg)
-  saturation(${fsat.value}%)
+  hue-rotate(${fhue.value}deg)
+  saturate(${fsat.value}%)
   invert(${fneg.value})`;
 };
-filtros();
-
 fbri.addEventListener("input", filtros);
 fopa.addEventListener("input", filtros);
 fcon.addEventListener("input", filtros);
+fdes.addEventListener("input", filtros);
 fgri.addEventListener("input", filtros);
 fsep.addEventListener("input", filtros);
 fhue.addEventListener("input", filtros);
