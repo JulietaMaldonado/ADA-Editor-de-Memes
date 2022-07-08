@@ -49,6 +49,13 @@ colorFondoImagen.addEventListener("input", (event) => {
   meme.style.backgroundColor = valorActual;
 });
 
+//MODOS DE FUSION
+const modosFusion = document.getElementById("modosFusion");
+
+modosFusion.addEventListener("input", (event) => {
+  meme.style.backgroundBlendMode = event.target.value;
+});
+
 //FILTROS DE IMAGEN
 let fbri = document.getElementById("fbri");
 let fopa = document.getElementById("fopa");
