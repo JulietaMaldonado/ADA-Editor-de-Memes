@@ -31,7 +31,7 @@
         <!--ENCABEZADO DE LA PAGINA-->
         <div class="encabezado" id="encabezado">
           <header id="header">
-            <h1>Generador de Memes</h1>
+            <h1 id="tituloEn">Generador de Memes</h1>
           </header>
           <nav id="nav">
             <button class="botonNav" id="imagenBoton">
@@ -52,6 +52,7 @@
             <div class="textoFondoTM" id="textoFondoTM">
               <h2 id="textoTM">Top Text</h2>
             </div>
+            <div class="memeFondo" id="memeFondo"></div>
             <div class="textoFondoBM" id="textoFondoBM">
               <h2 id="textoBM">Bottom Text</h2>
             </div>
@@ -72,11 +73,11 @@
             <h3>IMAGEN</h3>
             <div class="ajustes">
               <div class="cont1">
-                <label for="">URL</label>
+                <label for="" id="url">URL</label>
                 <input type="url" class="urlImagen" id="urlImagen" />
               </div>
               <div class="cont2">
-                <label for="">FONDO</label>
+                <label for="" id="fondo">FONDO</label>
                 <div class="contColorFondo">
                   <input
                     type="color"
@@ -94,24 +95,24 @@
                 </div>
               </div>
               <div class="cont3">
-                <label for="">FILTROS</label>
-                <label for="" class="labelFiltro">BRILLO</label>
+                <label for="" id="filtros">FILTROS</label>
+                <label for="" class="labelFiltro" id="brillo">BRILLO</label>
                 <input type="range" value="1" id="fbri"/>
-                <label for="" class="labelFiltro">OPACIDAD</label>
+                <label for="" class="labelFiltro" id="opacidad">OPACIDAD</label>
                 <input type="range" value="1" id="fopa"/>
-                <label for="" class="labelFiltro">CONTRASTE</label>
+                <label for="" class="labelFiltro" id="contraste">CONTRASTE</label>
                 <input type="range" value="100" id="fcon"/>
-                <label for="" class="labelFiltro">DESENFOQUE</label>
+                <label for="" class="labelFiltro" id="desenfoque">DESENFOQUE</label>
                 <input type="range" value="0" id="fdes"/>
-                <label for="" class="labelFiltro">ESCALA DE GRISES</label>
+                <label for="" class="labelFiltro" id="grises">ESCALA DE GRISES</label>
                 <input type="range" value="0" id="fgri"/>
-                <label for="" class="labelFiltro">SEPIA</label>
+                <label for="" class="labelFiltro" id="sepia">SEPIA</label>
                 <input type="range" value="0" id="fsep"/>
-                <label for="" class="labelFiltro">HUE</label>
+                <label for="" class="labelFiltro" id="hue">HUE</label>
                 <input type="range" value="0" id="fhue"/>
-                <label for="" class="labelFiltro">SATURADO</label>
+                <label for="" class="labelFiltro" id="saturado">SATURADO</label>
                 <input type="range" value="100" id="fsat"/>
-                <label for="" class="labelFiltro">NEGATIVO</label>
+                <label for="" class="labelFiltro" id="negativo">NEGATIVO</label>
                 <input type="range" value="0" id="fneg"/>
               </div>
             </div>
@@ -128,7 +129,7 @@
               <input type="text" placeholder="TOP TEXT" class="titulosInput" id="textoTop"/>
               <div class="check">
                 <input type="checkbox" id="displayTM" />
-                <p class="textoC">Sin texto superior</p>
+                <p class="textoC" id="sinTT">Sin texto superior</p>
               </div>
             </div>
             <div class="textoBTitulo">
@@ -141,7 +142,7 @@
               />
               <div class="check">
                 <input type="checkbox" id="displayBM"/>
-                <p class="textoC">Sin texto inferior</p>
+                <p class="textoC" id="sinTB">Sin texto inferior</p>
               </div>
             </div>
             <div class="fuentes">
@@ -207,7 +208,7 @@
               type="number"
               name=""
               id="espaciado"
-              value="35"
+              value="22"
               class="espaciadoInput"
             />
           </div>
@@ -218,12 +219,12 @@
               class="interlineadoSelect"
               id="interlineadoSelectValores"
             >
-              <option value="">0.8</option>
-              <option value="">1</option>
-              <option value="">1.2</option>
-              <option value="">1.5</option>
-              <option value="">2</option>
-              <option value="">2.5</option>
+              <option value="0.8">0.8</option>
+              <option value="1">1</option>
+              <option value="1.2">1.2</option>
+              <option value="1.5">1.5</option>
+              <option value="2">2</option>
+              <option value="2.5">2.5</option>
             </select>
           </div>
       </div>

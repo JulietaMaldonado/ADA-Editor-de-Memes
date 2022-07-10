@@ -19,26 +19,46 @@ imagenBoton.addEventListener("click", () => {
 const modoLight = document.getElementById("modo");
 
 modoLight.addEventListener("click", () => {
+  //contenedor principal
   document.getElementById("contenedor").classList.toggle(`lightMood2`);
+  //encabezado con menu
   document.getElementById("encabezado").classList.toggle(`lightMood1`);
+  document.getElementById("tituloEn").classList.toggle(`lightMood1`);
+  document.getElementById("nav").classList.toggle(`lightMood1`);
+  //barra de navegacion
+  document.getElementById("imagenBoton").classList.toggle(`lightMood4`);
+  document.getElementById("textoBoton").classList.toggle(`lightMood4`);
+  document.getElementById("modo").classList.toggle(`lightMood4`);
+  //aside
   document.getElementById("aside").classList.toggle(`lightMood3`);
-  document.getElementById("imagenBoton").classList.toggle(`lightMood4:hover`);
-  document.getElementById("textoBoton").classList.toggle(`lightMood4:hover`);
-  document.getElementById("modo").classList.toggle(`lightMood4:hover`);
-  document.getElementsById("urlImagen").classList.toggle(`lightMood2`);
-  document.getElementsById("urlImagen").classList.toggle(`lightMood2`);
-  document.getElementsById("colorFondoImagen").classList.toggle(`lightMood2`);
-  document.getElementsById("modosFusion").classList.toggle(`lightMood2`);
-  document.getElementsById("restablecerBoton").classList.toggle(`lightMood2`);
+  //labels
+  document.getElementById("url").classList.toggle(`lightMood3`);
+  document.getElementById("fondo").classList.toggle(`lightMood3`);
+  document.getElementById("filtros").classList.toggle(`lightMood3`);
+  document.getElementById("brillo").classList.toggle(`lightMood3`);
+  document.getElementById("opacidad").classList.toggle(`lightMood3`);
+  document.getElementById("contraste").classList.toggle(`lightMood3`);
+  document.getElementById("desenfoque").classList.toggle(`lightMood3`);
+  document.getElementById("grises").classList.toggle(`lightMood3`);
+  document.getElementById("sepia").classList.toggle(`lightMood3`);
+  document.getElementById("hue").classList.toggle(`lightMood3`);
+  document.getElementById("saturado").classList.toggle(`lightMood3`);
+  document.getElementById("negativo").classList.toggle(`lightMood3`);
+  //elementos aside imagen
+  document.getElementById("urlImagen").classList.toggle(`lightMood2`);
+
+  document.getElementById("colorFondoImagen").classList.toggle(`lightMood2`);
+  document.getElementById("modosFusion").classList.toggle(`lightMood2`);
+  document.getElementById("restablecerBoton").classList.toggle(`lightMood2`);
 });
 
 //FUNCIONES DEL ASIDE "IMAGEN"
 
 //URL IMAGEN INPUT
 const urlImagen = document.getElementById("urlImagen");
-const meme = document.getElementById("meme");
+const memeFondo = document.getElementById("memeFondo");
 urlImagen.addEventListener("input", () => {
-  meme.style = `background-image: url(${urlImagen.value})`;
+  memeFondo.style = `background-image: url(${urlImagen.value})`;
 });
 
 //COLOR DE MEME INPUT
@@ -46,14 +66,14 @@ const colorFondoImagen = document.getElementById("colorFondoImagen");
 
 colorFondoImagen.addEventListener("input", (event) => {
   const valorActual = event.target.value;
-  meme.style.backgroundColor = valorActual;
+  memeFondo.style.backgroundColor = valorActual;
 });
 
 //MODOS DE FUSION
 const modosFusion = document.getElementById("modosFusion");
 
 modosFusion.addEventListener("input", (event) => {
-  meme.style.backgroundBlendMode = event.target.value;
+  memeFondo.style.backgroundBlendMode = event.target.value;
 });
 
 //FILTROS DE IMAGEN
@@ -68,7 +88,7 @@ let fsat = document.getElementById("fsat");
 let fneg = document.getElementById("fneg");
 
 const filtros = () => {
-  meme.style.filter = `brightness(${fbri.value}) 
+  memeFondo.style.filter = `brightness(${fbri.value}) 
   opacity(${fopa.value}) 
   contrast(${fcon.value}%) 
   blur(${fdes.value}px)
@@ -109,12 +129,17 @@ textoBotton.addEventListener("input", (event) => {
 //CHECK DE DISPLAY DE TEXTO SUPERIOR E INFERIOR
 const displayTM = document.getElementById("displayTM");
 const displayBM = document.getElementById("displayBM");
+const textoFondoTM = document.getElementById("textoFondoTM");
+const textoFondoBM = document.getElementById("textoFondoBM");
 
 displayTM.addEventListener("click", () => {
   textoFondoTM.classList.toggle("ocultar");
+  memeFondo.classList.toggle("memeTaG1");
+  textoFondoBM.classList.toggle("memeTaB1");
 });
 displayBM.addEventListener("click", () => {
   textoFondoBM.classList.toggle("ocultar");
+  memeFondo.classList.toggle("memeTaG2");
 });
 
 //SELECT FUENTES
@@ -122,7 +147,6 @@ displayBM.addEventListener("click", () => {
 const tiposFuentes = document.getElementById("tiposFuentes");
 
 tiposFuentes.addEventListener("input", (event) => {
-  console.log(event);
   textoTM.style.fontFamily = event.target.value;
   textoBM.style.fontFamily = event.target.value;
 });
@@ -131,8 +155,6 @@ tiposFuentes.addEventListener("input", (event) => {
 
 const colorTextoInput = document.getElementById("colorTextoInput");
 const colorFondoInput = document.getElementById("colorFondoInput");
-const textoFondoTM = document.getElementById("textoFondoTM");
-const textoFondoBM = document.getElementById("textoFondoBM");
 
 colorTextoInput.addEventListener("input", (event) => {
   textoTM.style.color = event.target.value;
@@ -149,6 +171,8 @@ const fondoTransCheck = document.getElementById("fondoTransCheck");
 fondoTransCheck.addEventListener("click", () => {
   textoFondoTM.classList.toggle("fondoTrans");
   textoFondoBM.classList.toggle("fondoTrans");
+  memeFondo.classList.toggle("memeTaG3");
+  textoFondoBM.classList.toggle("tituloBMar");
 });
 
 //FUENTE TAMANIO CAMBIO
@@ -156,8 +180,8 @@ fondoTransCheck.addEventListener("click", () => {
 const fuenteTam = document.getElementById("fuenteTam");
 
 fuenteTam.addEventListener("input", (event) => {
-  textoTM.style.fontSize = event.target.value;
-  textoBM.style.fontSize = event.target.value;
+  textoTM.style.fontSize = `${event.target.value}px`;
+  textoBM.style.fontSize = `${event.target.value}px`;
 });
 
 //ALINEAR TEXTO SUPERIOR E INFERIOR
@@ -176,6 +200,41 @@ aliCentro.addEventListener("click", () => {
 aliDerecha.addEventListener("click", () => {
   textoTM.style.textAlign = "right";
   textoBM.style.textAlign = "right";
+});
+
+//CORTONO DE TEXTO
+const contornoBotonNin = document.getElementById("contornoBotonNin");
+const contornoBotonCla = document.getElementById("contornoBotonCla");
+const contornoBotonOsc = document.getElementById("contornoBotonOsc");
+
+contornoBotonNin.addEventListener("click", () => {
+  textoTM.classList.toggle = "contNinguno";
+  textoBM.classList.toggle = "contNinguno";
+});
+contornoBotonCla.addEventListener("click", () => {
+  textoTM.classList.toggle = "contClaro";
+  textoBM.classList.toggle = "contClaro";
+});
+contornoBotonOsc.addEventListener("click", () => {
+  textoTM.classList.toggle = "contOscuro";
+  textoBM.classList.toggle = "contOscuro";
+});
+
+//ESPACIADO DE TEXTO
+const espaciado = document.getElementById("espaciado");
+espaciado.addEventListener("input", (event) => {
+  textoFondoTM.style.padding = `${event.target.value}px`;
+  textoFondoBM.style.padding = `${event.target.value}px`;
+});
+
+//INTERLINEADO DEL TEXTO
+const interlineadoSelectValores = document.getElementById(
+  "interlineadoSelectValores"
+);
+
+interlineadoSelectValores.addEventListener("input", (event) => {
+  textoFondoTM.style.lineHeight = event.target.value;
+  textoFondoBM.style.lineHeight = event.target.value;
 });
 
 //BOTON DE DESCARGA

@@ -15,8 +15,7 @@
 }
 .derecha {
   width: 20%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  height: 880px;
 }
 /*ENCABEZADO*/
 .encabezado {
@@ -64,9 +63,12 @@ main {
 .meme {
   height: 596px;
   width: 540px;
-  background-color: black;
   margin: 15px;
-  background-repeat: inherit;
+  background-color: black;
+}
+.memeFondo {
+  background-color: transparent;
+  height: 336px;
 }
 /*TEXTO DEL MEME*/
 h2 {
@@ -77,12 +79,15 @@ h2 {
   display: flex;
   background-color: white;
   height: 85px;
+  padding: 22px;
+  line-height: 1.2px;
 }
 .textoFondoBM {
   display: flex;
-  margin-top: 426px;
   background-color: white;
   height: 85px;
+  padding: 22px;
+  line-height: 1.2px;
 }
 #textoTM {
   text-align: center;
@@ -408,7 +413,7 @@ label {
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 20px;
+  margin: 30px;
   color: white;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -426,14 +431,51 @@ label {
   background-color: white;
   color: black;
 }
-.lightMood4:hover {
+.lightMood4 {
   background-color: #e0e0e0;
+  color: black;
+}
+.lightMood4:hover {
+  background-color: grey;
 }
 
 /*ESTILOS PARA OCULTAR TEXTOS SUPERIOR E INFERIOR CHECK*/
 .ocultar {
   display: none;
 }
+.memeTaG1 {
+  height: 511px;
+  margin-top: 0px !important;
+}
+.memeTaT1 {
+  margin-bottom: 0px;
+}
+.memeTaB1 {
+  margin-top: -43px;
+}
+.memeTaG2 {
+  height: 500px;
+  margin-top: 0px;
+}
+.memeTaG3 {
+  height: 596px;
+  margin-top: -130px;
+}
+
 .fondoTrans {
   background-color: transparent !important;
+}
+.tituloBMar {
+  margin-top: -132px;
+}
+
+/*ESTILOS PARA CONTORNO DE TEXTO*/
+.contNinguno {
+  text-shadow: none;
+}
+.contClaro {
+  text-shadow: white;
+}
+.contOscuro {
+  text-shadow: black;
 }
