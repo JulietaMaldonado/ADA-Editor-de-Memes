@@ -70,7 +70,7 @@
 
           <!--ASIDE IMAGEN-->
           <div class="asideImagen" id="asideImagen">
-            <h3>IMAGEN</h3>
+            <h3 id="tituloImagen">IMAGEN</h3>
             <div class="ajustes">
               <div class="cont1">
                 <label for="" id="url">URL</label>
@@ -123,9 +123,9 @@
 
           <!--ASIDE TEXTO-->
           <div class="asideTexto" id="asideTexto" style="display: none">
-            <h3>TEXTO</h3>
+            <h3 id="tituloTexto">TEXTO</h3>
             <div class="textoTTitulo">
-              <label for="">SUPERIOR</label>
+              <label for="" id="superior">SUPERIOR</label>
               <input type="text" placeholder="TOP TEXT" class="titulosInput" id="textoTop"/>
               <div class="check">
                 <input type="checkbox" id="displayTM" />
@@ -133,7 +133,7 @@
               </div>
             </div>
             <div class="textoBTitulo">
-              <label for="">INFERIOR</label>
+              <label for="" id="inferior">INFERIOR</label>
               <input
                 type="text"
                 placeholder="BOTTOM TEXT"
@@ -146,7 +146,7 @@
               </div>
             </div>
             <div class="fuentes">
-              <label for="">FUENTE</label>
+              <label for="" id="textoFuente">FUENTE</label>
               <div class="fuenteA">
                 <select name="" id="tiposFuentes" class="tiposFuentes">
                   <option value="Arial" id="arialF">Arial</option>
@@ -177,21 +177,21 @@
           <div class="coloresTexto">
             <div class="colorTF">
               <div class="colorT">
-                <label for="">COLOR</label>
+                <label for="" id="textoColor">COLOR</label>
                 <input type="color" name="" id="colorTextoInput" class="colorTextoInput" />
               </div>
               <div class="colorF">
-                <label for="">FONDO</label>
+                <label for="" id="textoFondo">FONDO</label>
                 <input type="color" name="" id="colorFondoInput" class="colorFondoInput" />
               </div>
             </div>
             <div class="checkF">
               <input type="checkbox" name="" id="fondoTransCheck" />
-              <p class="textoCheck">Fondo transparente</p>
+              <p class="textoCheck" id="textoCheck">Fondo transparente</p>
             </div>
           </div>
           <div class="contorno">
-            <label for="">CONTORNO</label>
+            <label for="" id="textoContorno">CONTORNO</label>
             <div class="contornoBotones">
               <button class="contornoBoton" id="contornoBotonNin">
                 Ninguno
@@ -203,7 +203,7 @@
             </div>
           </div>
           <div class="espaciado">
-            <label for="">ESPACIADO</label>
+            <label for="" id="textoEspaciado">ESPACIADO</label>
             <input
               type="number"
               name=""
@@ -213,7 +213,7 @@
             />
           </div>
           <div class="interlineado">
-            <label for="">INTERLINEADO</label>
+            <label for="" id="textoInterlineado">INTERLINEADO</label>
             <select
               name=""
               class="interlineadoSelect"

@@ -31,7 +31,12 @@ modoLight.addEventListener("click", () => {
   document.getElementById("modo").classList.toggle(`lightMood4`);
   //aside
   document.getElementById("aside").classList.toggle(`lightMood3`);
-  //labels
+  //elementos aside imagen
+  document.getElementById("tituloImagen").classList.toggle(`lightMood3`);
+  document.getElementById("urlImagen").classList.toggle(`lightMood2`);
+  document.getElementById("colorFondoImagen").classList.toggle(`lightMood2`);
+  document.getElementById("modosFusion").classList.toggle(`lightMood2`);
+
   document.getElementById("url").classList.toggle(`lightMood3`);
   document.getElementById("fondo").classList.toggle(`lightMood3`);
   document.getElementById("filtros").classList.toggle(`lightMood3`);
@@ -44,12 +49,37 @@ modoLight.addEventListener("click", () => {
   document.getElementById("hue").classList.toggle(`lightMood3`);
   document.getElementById("saturado").classList.toggle(`lightMood3`);
   document.getElementById("negativo").classList.toggle(`lightMood3`);
-  //elementos aside imagen
-  document.getElementById("urlImagen").classList.toggle(`lightMood2`);
 
-  document.getElementById("colorFondoImagen").classList.toggle(`lightMood2`);
-  document.getElementById("modosFusion").classList.toggle(`lightMood2`);
   document.getElementById("restablecerBoton").classList.toggle(`lightMood2`);
+  //elementos aside texto
+  document.getElementById("tituloTexto").classList.toggle(`lightMood3`);
+  document.getElementById("superior").classList.toggle(`lightMood3`);
+  document.getElementById("textoTop").classList.toggle(`lightMood2`);
+  document.getElementById("sinTT").classList.toggle(`lightMood3`);
+  document.getElementById("inferior").classList.toggle(`lightMood3`);
+  document.getElementById("textoBotton").classList.toggle(`lightMood2`);
+  document.getElementById("sinTB").classList.toggle(`lightMood3`);
+  document.getElementById("textoFuente").classList.toggle(`lightMood3`);
+  document.getElementById("tiposFuentes").classList.toggle(`lightMood2`);
+  document.getElementById("fuenteTam").classList.toggle(`lightMood2`);
+  document.getElementById("aliIzquierda").classList.toggle(`lightMood2`);
+  document.getElementById("aliCentro").classList.toggle(`lightMood2`);
+  document.getElementById("aliDerecha").classList.toggle(`lightMood2`);
+  document.getElementById("textoColor").classList.toggle(`lightMood3`);
+  document.getElementById("colorTextoInput").classList.toggle(`lightMood2`);
+  document.getElementById("textoFondo").classList.toggle(`lightMood3`);
+  document.getElementById("colorFondoInput").classList.toggle(`lightMood2`);
+  document.getElementById("textoCheck").classList.toggle(`lightMood3`);
+  document.getElementById("textoContorno").classList.toggle(`lightMood3`);
+  document.getElementById("contornoBotonNin").classList.toggle(`lightMood2`);
+  document.getElementById("contornoBotonCla").classList.toggle(`lightMood2`);
+  document.getElementById("contornoBotonOsc").classList.toggle(`lightMood2`);
+  document.getElementById("textoEspaciado").classList.toggle(`lightMood3`);
+  document.getElementById("espaciado").classList.toggle(`lightMood2`);
+  document.getElementById("textoInterlineado").classList.toggle(`lightMood3`);
+  document
+    .getElementById("interlineadoSelectValores")
+    .classList.toggle(`lightMood2`);
 });
 
 //FUNCIONES DEL ASIDE "IMAGEN"

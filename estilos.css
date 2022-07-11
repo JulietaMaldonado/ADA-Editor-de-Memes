@@ -78,14 +78,14 @@ h2 {
 .textoFondoTM {
   display: flex;
   background-color: white;
-  height: 85px;
+  height: 86px;
   padding: 22px;
   line-height: 1.2px;
 }
 .textoFondoBM {
   display: flex;
   background-color: white;
-  height: 85px;
+  height: 86px;
   padding: 22px;
   line-height: 1.2px;
 }
@@ -426,6 +426,7 @@ label {
 }
 .lightMood2 {
   background-color: grey;
+  color: black;
 }
 .lightMood3 {
   background-color: white;
