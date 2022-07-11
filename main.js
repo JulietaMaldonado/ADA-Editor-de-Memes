@@ -275,3 +275,30 @@ descarga.addEventListener("click", () =>
     .toBlob(document.getElementById("meme"))
     .then((blob) => saveAs(blob, "mi-meme.png"))
 );
+
+//BOTON DE RESET DE FILTROS
+
+const restablecer = (e) => {
+  e.preventDefault();
+  memeFondo.style.filter = `brightness(1) 
+  opacity(1) 
+  contrast(100%) 
+  blur(0px)
+  grayscale(0%)
+  sepia(0%)
+  hue-rotate(0)
+  saturate(100%)
+  invert(0)`;
+  fbri.value = 1;
+  fopa.value = 1;
+  fcon.value = 100;
+  fdes.value = 0;
+  fsep.value = 0;
+  fhue.value = 0;
+  fsat.value = 100;
+  fneg.value = 0;
+};
+const restablecerBoton = document.getElementById("restablecerBoton");
+restablecerBoton.addEventListener("click", (e) => {
+  restablecer(e);
+});
